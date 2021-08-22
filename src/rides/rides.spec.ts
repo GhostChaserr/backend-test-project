@@ -1,22 +1,22 @@
+const { createServer } = require('http')
 import request from 'supertest'
 import runApp from '../app'
-import { buildSchemas } from '../index'
+import { buildSchemas } from '../db-schema'
 const sqlite3 = require('sqlite3').verbose()
 const db = new sqlite3.Database(':memory:')
 
+
+
+
 describe('Should test entire rides module', () => {
-  let server: any
   let rideID: number
+  let server: any
+
   beforeAll(async () => {
-    return new Promise((resolve, reject) => {
-      db.serialize(() => {
-        buildSchemas(db)
-        const app = runApp(db)
-        server = app.listen(3000, () => {
-          resolve(null)
-        })
-      })
-    })
+    await db.serialize(() => buildSchemas(db))
+    const app = runApp(db)
+    server = app.listen(3000)
+
   })
 
   it('Should check health status', async () => {
@@ -42,11 +42,12 @@ describe('Should test entire rides module', () => {
       .set('Content-Type', 'application/json')
       .set('Accept', 'application/json')
 
+    rideID = response.body.rideID
     expect(response.body.startLat).toBe(ridePayload.startLatitude)
     expect(response.body.startLong).toBe(ridePayload.startLongitude)
     expect(response.status).toBe(200)
 
-    rideID = response.body.rideID
+
   })
 
   it('It Should query rides', async () => {
@@ -64,5 +65,12 @@ describe('Should test entire rides module', () => {
   it('It should throw 400 error if invalid ride id was provided', async () => {
     const response = await request(server).get(`/rides/10`)
     expect(response.status).toBe(400)
+  })
+
+  afterAll(async ()  => {
+    await Promise.all([
+      db.close(),
+      server.close()
+    ])
   })
 })
