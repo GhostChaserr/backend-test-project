@@ -1,11 +1,7 @@
 name: Test CI
 on:
-  pull:
-    branches:
-      - master
-  push:
-    branches:
-      - master
+  pull_request:
+    branches: [ develop, master, staging ]
 jobs:
   build:
     name: Test
