@@ -58,7 +58,6 @@ export const insertRide = async (db: any, newRide: CreateRideDto): Promise<Inser
 }
 
 export const fetchRide = (db: any, rideID: number): Promise<FetchRideQueryResponse> => {
-  console.log('Ride ID', rideID)
   return new Promise((resolve, reject) => {
     db.all(`SELECT * FROM Rides WHERE rideID='${rideID}'`, (err, rows) => {
       if (err) {
