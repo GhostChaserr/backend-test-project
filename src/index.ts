@@ -1,7 +1,7 @@
 import runApp from './app'
 import sqlite3 from 'sqlite3'
 
-const buildSchemas = (dbInsance: any) => {
+export const buildSchemas = (dbInsance: any) => {
   const createRideTableSchema = `
     CREATE TABLE Rides
     (
