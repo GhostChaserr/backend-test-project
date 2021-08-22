@@ -1,6 +1,5 @@
 import runApp from './app'
-import sqlite3 from 'sqlite3'
-import { db, buildSchemas } from 'schema'
+import { db, buildSchemas } from  './db-schema'
 
 db.serialize(() => {
   buildSchemas(db)

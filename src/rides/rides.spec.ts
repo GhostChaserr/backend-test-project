@@ -1,7 +1,7 @@
 const { createServer } = require('http')
 import request from 'supertest'
 import runApp from '../app'
-import { buildSchemas } from '../schema'
+import { buildSchemas } from '../db-schema'
 const sqlite3 = require('sqlite3').verbose()
 const db = new sqlite3.Database(':memory:')
 
