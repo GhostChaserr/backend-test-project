@@ -18,4 +18,5 @@ export interface FetchRideQueryResponse {
 export interface InsertRideResponse extends FetchRideQueryResponse {}
 export interface FetchRidesResponse extends FetchRideQueryResponse {
   rides?: IRide[]
+  total: number
 }
