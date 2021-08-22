@@ -16,7 +16,6 @@ const buildSchemas = (dbInsance: any) => {
     created DATETIME default CURRENT_TIMESTAMP
     )
   `
-
   dbInsance.run(createRideTableSchema)
   return db
 }
