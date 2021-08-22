@@ -3,10 +3,9 @@ on:
   push:
     branches:
       - master
-
 jobs:
-  release:
-    name: Release
+  build:
+    name: Test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -14,12 +13,15 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
+          
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
           node-version: 15
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
-
-      - name: Test CI
-        run: yarn test
+  
+      - uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: install # will run `yarn install` command
+      - uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: test # will run `yarn test` command
