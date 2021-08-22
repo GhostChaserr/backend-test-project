@@ -51,7 +51,7 @@ describe('Should test entire rides module', () => {
 
   it('It Should query rides', async () => {
     const response = await request(server).get('/rides')
-    expect(response.body.length).toBeGreaterThan(0)
+    expect(response.body.rides.length).toBeGreaterThan(0)
     expect(response.status).toBe(200)
   })
 
