@@ -1,4 +1,19 @@
+# App overview
+Uber like app where driver moves customer from one point to another. using geometric cordinates, we know start and end places for ride, who is driver, rider and also vehicle used on ride.
+
+### What server rodes.
+
+1. Allows client to post new ride using valid request body.
+2. Allows client to query all rides. 
+3. Allows client to query single ride.
+
+!! We validate ride gemoetric cordinates to be valid.
+!! We wont allow request to retrive ride that does not exits
+!! We Log everytime someone creates ride, entire user agent info.
+
+
 # Overall app architecture
+
 ### HTTP Layer
 handles incoming requests, data validations and policies.
 
@@ -42,3 +57,6 @@ https://github.com/GhostChaserr/backend-test-project/pull/11
 
 # Swagger and api docs example
 https://github.com/GhostChaserr/backend-test-project/pull/12
+
+# PM2 Process manager
+https://github.com/GhostChaserr/backend-test-project/pull/13
