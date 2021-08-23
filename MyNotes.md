@@ -24,3 +24,6 @@ https://github.com/GhostChaserr/backend-test-project/pull/5
 
 # Winston and logging
 https://github.com/GhostChaserr/backend-test-project/pull/6
+
+# SQL Injection
+https://github.com/GhostChaserr/backend-test-project/pull/7
