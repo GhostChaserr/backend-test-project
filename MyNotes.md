@@ -33,3 +33,6 @@ https://github.com/GhostChaserr/backend-test-project/pull/8
 
 # Basic express security
 https://github.com/GhostChaserr/backend-test-project/pull/9
+
+# Travis CI Build 
+https://github.com/GhostChaserr/backend-test-project/pull/10
