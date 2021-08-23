@@ -1,3 +1,17 @@
+# Overall app architecture
+### HTTP Layer
+handles incoming requests, data validations and policies.
+
+### Service layer
+handles app business logic
+
+### DB Layer
+handles database queries.
+
+!! Generally its good idea to keep http layer small, just handle request, check policy and validate data. business logic 
+is moved into service layer, which also comunicates with db layer.
+
+
 # Integration tests PR
 https://github.com/GhostChaserr/backend-test-project/pull/1
 
