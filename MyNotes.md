@@ -27,3 +27,6 @@ https://github.com/GhostChaserr/backend-test-project/pull/6
 
 # SQL Injection
 https://github.com/GhostChaserr/backend-test-project/pull/7
+
+# Artillery load testing
+https://github.com/GhostChaserr/backend-test-project/pull/8
