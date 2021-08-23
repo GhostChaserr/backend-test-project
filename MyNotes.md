@@ -9,7 +9,6 @@ Uber like app where driver moves customer from one point to another. using geome
 
 !! We validate ride gemoetric cordinates to be valid.
 !! We wont allow request to retrive ride that does not exits
-!! We Log everytime someone creates ride, entire user agent info.
 
 
 # Overall app architecture
