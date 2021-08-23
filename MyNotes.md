@@ -36,3 +36,6 @@ https://github.com/GhostChaserr/backend-test-project/pull/9
 
 # Travis CI Build 
 https://github.com/GhostChaserr/backend-test-project/pull/10
+
+# Pre commit Hooks. Additional tooling
+https://github.com/GhostChaserr/backend-test-project/pull/11
