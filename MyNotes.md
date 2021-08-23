@@ -30,3 +30,6 @@ https://github.com/GhostChaserr/backend-test-project/pull/7
 
 # Artillery load testing
 https://github.com/GhostChaserr/backend-test-project/pull/8
+
+# Basic express security
+https://github.com/GhostChaserr/backend-test-project/pull/9
