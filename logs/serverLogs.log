@@ -2,3 +2,32 @@
 {"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"os":"Mac OS","browser":"Chrome","device":"PC","version":"10.15.7"},"ip":"::1","level":"error","message":"Failed to find ride"}
 {"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"os":"Mac OS","browser":"Chrome","device":"PC","version":"10.15.7"},"ip":"::1","level":"error","message":"Failed to find ride"}
 {"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"os":"Mac OS","browser":"Chrome","device":"PC","version":"10.15.7"},"ip":"::1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::ffff:127.0.0.1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::ffff:127.0.0.1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::ffff:127.0.0.1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::ffff:127.0.0.1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::ffff:127.0.0.1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::ffff:127.0.0.1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::ffff:127.0.0.1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::ffff:127.0.0.1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::ffff:127.0.0.1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::ffff:127.0.0.1","level":"error","message":"Failed to find ride"}
+{"error":"RIDES_NOT_FOUND_ERROR","status":400,"service":"findRide","agent":{"device":"PC"},"ip":"::ffff:127.0.0.1","level":"error","message":"Failed to find ride"}

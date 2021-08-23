@@ -8,10 +8,10 @@ export const fetchAllRides = async (db: any, page: number, size: number): Promis
       const SQL = `
         SELECT *
         FROM Rides
-        LIMIT ${size}
-        OFFSET ${skip}
+        LIMIT?
+        OFFSET?
       `
-      db.all(SQL, (err, rows) => {
+      db.all(SQL,[size, skip], (err, rows) => {
         if (err) {
           reject({
             error: 'SERVER_ERROR',
@@ -88,7 +88,7 @@ export const insertRide = async (db: any, newRide: CreateRideDto): Promise<Inser
 
 export const fetchRide = (db: any, rideID: number): Promise<FetchRideQueryResponse> => {
   return new Promise((resolve, reject) => {
-    db.all(`SELECT * FROM Rides WHERE rideID='${rideID}'`, (err, rows) => {
+    db.all(`SELECT * FROM Rides WHERE rideID=?`, [rideID], (err, rows) => {
       if (err) {
         reject({
           error: 'SERVER_ERROR',
@@ -102,6 +102,28 @@ export const fetchRide = (db: any, rideID: number): Promise<FetchRideQueryRespon
         })
       }
       resolve(rows[0])
+    })
+  })
+
+}
+
+export const fetchRideUnsecure = (db: any, rideID: number): Promise<FetchRideQueryResponse> => {
+  return new Promise((resolve, reject) => {
+    const query='SELECT * FROM Rides WHERE rideID='+ rideID
+    db.all(query, (err, rows) => {
+      if (err) {
+        reject({
+          error: 'SERVER_ERROR',
+          status: 500
+        })
+      }
+      if (rows.length === 0) {
+        reject({
+          error: 'RIDES_NOT_FOUND_ERROR',
+          status: 400
+        })
+      }
+      resolve(rows)
     })
   })
 
