@@ -7,3 +7,6 @@ https://github.com/GhostChaserr/backend-test-project/pull/2
 
 # Test CI On Github Actions
 https://github.com/GhostChaserr/backend-test-project/pull/5
+
+# Winston and logging
+https://github.com/GhostChaserr/backend-test-project/pull/6
