@@ -2,17 +2,17 @@ config:
   target: "http://localhost:4000"
   phases:
     - duration: 5
-      arrivalRate: 60
+      arrivalRate: 3000
 scenarios:
   - name: "App endpoints"
     flow:
       - post:
           url: "/rides"
           json:
-            startLatitude: 120.0
-            startLongitude: 190.0
-            endLatitude: 120.0
-            endLongitude: 190.0
+            startLatitude: 89
+            startLongitude: 170
+            endLatitude: 20
+            endLongitude: 178
             riderName: "george"
             driverName: "george"
             driverVehicle: "m3"
