@@ -1,6 +1,7 @@
 export interface IRide {
   rideID: number
   startLat: number
+  startLong: number
   endLat: number
   endLong: number
   riderName: string
