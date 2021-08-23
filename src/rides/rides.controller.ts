@@ -66,19 +66,19 @@ router.get('/injection/test', async (req: ModifiedRequest, res: ModifiedResponse
  *              startLatitude:
  *                 type: number
  *                 description: Starting lattitude of ride
- *                 example: 1298.980
+ *                 example: 89
  *              startLongitude:
  *                 type: number
  *                 description: Ending longitude of ride
- *                 example: 1298.980
+ *                 example: 170
  *              endLatitude:
  *                 type: number
  *                 description: Ending latitude of ride
- *                 example: 1298.980
+ *                 example: 20
  *              endLongitude:
  *                 type: number
  *                 description: Ending latitude of ride
- *                 example: 1298.980
+ *                 example: 178
  *              roderName:
  *                 type: string
  *                 description: Rider name

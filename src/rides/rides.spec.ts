@@ -28,10 +28,10 @@ describe('Should test entire rides module', () => {
 
   it('It Should post new ride data', async () => {
     const ridePayload = {
-      startLatitude: 120.0,
-      startLongitude: 130.0,
-      endLatitude: 150.0,
-      endLongitude: 120.0,
+      startLatitude: 89,
+      startLongitude: 170,
+      endLatitude: 20,
+      endLongitude: 178,
       riderName: 'georg',
       driverName: 'george',
       driverVehicle: 'BMW X5'
