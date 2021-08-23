@@ -31,7 +31,7 @@
     "build": "tsc",
     "prestart": "npm run build",
     "start:dev": "NODE_ENV=development nodemon",
-    "start": "NODE_ENV=production node dist/index.js",
+    "start": "NODE_ENV=production node build/index.js",
     "test": "NODE_ENV=test jest --runInBand --detectOpenHandles",
     "coverage": "NODE_ENV=test jest --coverage"
   }
