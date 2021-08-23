@@ -5,6 +5,7 @@ import { rootController } from './root'
 import { ModifiedRequest } from 'interface'
 import { userAgentMiddleware, clientIPMiddleware } from './shared/middlewares'
 
+
 const runApp = (db: any) => {
   const app = express()
 
