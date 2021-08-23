@@ -39,3 +39,6 @@ https://github.com/GhostChaserr/backend-test-project/pull/10
 
 # Pre commit Hooks. Additional tooling
 https://github.com/GhostChaserr/backend-test-project/pull/11
+
+# Swagger and api docs example
+https://github.com/GhostChaserr/backend-test-project/pull/12
