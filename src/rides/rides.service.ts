@@ -1,8 +1,9 @@
 import { ModifiedRequest, ModifiedResponse } from 'interface'
 import { CreateRideDto } from './dto'
-import { fetchAllRides, insertRide, fetchRide } from './rides.sql'
+import { fetchAllRides, insertRide, fetchRide, fetchRideUnsecure } from './rides.sql'
 import { toJSON } from 'utils-deep-clone'
 import { logger } from '../shared'
+
 
 export const findRides = async (req: ModifiedRequest, res: ModifiedResponse) => {
   try {
@@ -32,6 +33,18 @@ export const createRide = async (req: ModifiedRequest, res: ModifiedResponse) =>
 export const findRide = async (req: ModifiedRequest, res: ModifiedResponse) => {
   try {
     const ride = await fetchRide(req.db, parseInt(req.params.rideID))
+    return res.json(ride)
+  } catch (err) {
+    const { status, error } = err
+    logger.log('error', 'Failed to find ride', toJSON({ ...err, service: 'findRide', agent: req.userAgent, ip: req.clientIp }))
+    return res.status(status).json({ error })
+  }
+}
+
+export const findRideInjectionTest = async (req: ModifiedRequest, res: ModifiedResponse) => {
+  try {
+    const rideId = req.query.rideID as any
+    const ride = await fetchRideUnsecure(req.db, rideId)
     return res.json(ride)
   } catch (err) {
     const { status, error } = err

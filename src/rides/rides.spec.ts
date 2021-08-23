@@ -67,6 +67,16 @@ describe('Should test entire rides module', () => {
     expect(response.status).toBe(400)
   })
 
+  it('Should inject SQL Script so that exposes all data', async () => {
+    const response = await request(server).get(`/rides/injection/test?rideID=105 OR 1=1`)
+    expect(response.body.length).toBeGreaterThan(0)
+  })
+
+  it ('Should not query database using SQL Script injection', async () => {
+    const response = await request(server).get(`/rides/OR 1=1`)
+    expect(response.status).toBe(400)
+  })
+
   afterAll(async ()  => {
     await Promise.all([
       db.close(),
